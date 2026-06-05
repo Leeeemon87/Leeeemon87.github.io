@@ -56,7 +56,35 @@ a {
 }
 
 .hero-content {
-  max-width: 920px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
+  gap: 56px;
+  align-items: center;
+  max-width: 1180px;
+}
+
+.hero-copy {
+  max-width: 820px;
+}
+
+.hero-portrait {
+  aspect-ratio: 3 / 4;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.28);
+  justify-self: end;
+  margin: 0;
+  overflow: hidden;
+  width: min(34vw, 360px);
+}
+
+.hero-portrait img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  width: 100%;
 }
 
 .eyebrow {
@@ -196,6 +224,16 @@ footer {
 
   .cards {
     grid-template-columns: 1fr;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .hero-portrait {
+    justify-self: start;
+    width: min(100%, 320px);
   }
 
   .hero {
