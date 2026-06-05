@@ -57,7 +57,7 @@ a {
 
 .hero-content {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 380px);
   gap: 56px;
   align-items: center;
   max-width: 1180px;
@@ -68,7 +68,7 @@ a {
 }
 
 .hero-portrait {
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 1 / 1;
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -76,14 +76,14 @@ a {
   justify-self: end;
   margin: 0;
   overflow: hidden;
-  width: min(34vw, 360px);
+  width: min(34vw, 380px);
 }
 
 .hero-portrait img {
   display: block;
   height: 100%;
   object-fit: cover;
-  object-position: center top;
+  object-position: center center;
   width: 100%;
 }
 
